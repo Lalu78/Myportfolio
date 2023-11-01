@@ -3,6 +3,8 @@ import React from 'react';
 import Bar from './Bar';
 import { motion } from 'framer-motion'
 import { tools, languages } from './data/resume_data'
+import Skillcard from "./Skillcard";
+import skills from "./data/about_data";
 
 
 const Resume = () => {
@@ -40,12 +42,30 @@ const Resume = () => {
                     </h4>
                     <div className="resume-card__body">
                         <h5 className="resume-card__title">
-                            Information Technology
+                        Graduation
                         </h5>
                         <p className="resume-card__name">
-                            Academy Of Bachelor Of Engineering (2016-2020)
+                         Bachelor Of Engineering In <strong>Information Technology</strong> (2016-2020)
                         </p>
-                        <p className="resume-card__details">I have completed B.E from Lakshmi Narain College Of Technology, Bhopal</p>
+                        <p><strong>College:-</strong> Lakshmi Narain College of Technology,Bhopal</p>
+                    </div>
+                    <div className="resume-card__body">
+                        <h5 className="resume-card__title">
+                        12th
+                        </h5>
+                        <p className="resume-card__name">
+                        PCM (2016)
+                        </p>
+                        <p><strong>College / School:-</strong> MLSM College Darbhanga, Bihar</p>
+                    </div>
+                    <div className="resume-card__body">
+                        <h5 className="resume-card__title">
+                        10th
+                        </h5>
+                        <p className="resume-card__name">
+                        All Common subjects  (2013)
+                        </p>
+                        <p><strong>College / School:-</strong> MRRP High School Bhatchaura, Bihar </p>
                     </div>
                 </div>
                 <div className="col-lg-6 resume-card" >
@@ -54,12 +74,19 @@ const Resume = () => {
                     </h4>
                     <div className="resume-card__body">
                         <h5 className="resume-card__title">
+                        Full Stack Developer
+                        </h5>
+                        <p className="resume-card__name">
+                        Napses Technologies Pvt Ltd.(From 2021 to Present)
+                        </p>
+                    </div>
+                    <div className="resume-card__body">
+                        <h5 className="resume-card__title">
                             Intern
                         </h5>
                         <p className="resume-card__name">
-                            ITE(2019)
+                            ITE(2020)
                         </p>
-                        <p className="resume-card__details">I work as a intern in ITE and also completed some projects </p>
                     </div>
                 </div>
             </div>
@@ -88,6 +115,14 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+             <div className="container about__container">
+        <h6 className="about__heading">What I offer</h6>
+        <div className="row">
+          {skills.map((skill) => (
+            <Skillcard skill={skill} />
+          ))}
+        </div>
+      </div> 
         </motion.div>
     );
 };

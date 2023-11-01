@@ -81,9 +81,29 @@ a:hover {
   height: 40px;
   font-size: 1.05rem;
   border-radius: 30px;
+ 
   
 }
+.sidebar__resume{
+  background-color: #ece1e1;
+}
+.sidebar__social-icons{
+  background-color: #ece1e1;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
 
+}
+.linkedin_icon{
+  width: 18px;
+  padding-right:4px;
+}
+.linkedintext{
+  color: #007bff;
+}
+.sidebar__location{
+  margin-top: 10px;
+}
 .sidebar__title {
   background-color: #ece1e1;
   border-radius: 30px;
@@ -100,7 +120,7 @@ a:hover {
 .sidebar__email {
   background-image: linear-gradient(to right bottom, red, #0575e6);
 
-  border-radius: 30px;
+  border-radius: 10px;
   color: #fff;
   margin: 15px 25px 0px;
   cursor: pointer;
@@ -179,8 +199,15 @@ a:hover {
 /* resume */
 
 .resume {
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: rgba(233, 105, 184, 0.37);
+}
+.about1{
+
+  margin: 15px;
+  padding-bottom: 10px;
+  background-color: rgba(233, 105, 184, 0.37);
+  min-height: 80vh;
 }
 
 .resume-card__heading,
@@ -243,6 +270,7 @@ a:hover {
   width: 100%;
   height: 100%;
   min-height: 160px;
+object-fit: cover;
 }
 
 .projectCard__image {
@@ -251,6 +279,8 @@ a:hover {
   border-radius: 30px;
   border: 1px solid #00f260;
   transition: transform 0.3s linear;
+  
+
 }
 
 .projectCard__image:hover {

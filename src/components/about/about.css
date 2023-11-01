@@ -19,6 +19,7 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    background-color: rgba(233, 105, 184, 0.37);
 }
 
 .about__heading {
