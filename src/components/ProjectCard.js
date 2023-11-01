@@ -1,7 +1,7 @@
 import React from 'react';
 const ProjectCard = ({ project: { name, image, deployed_url, github_url } }) => {
     return (
-        <div className="projectrCard col-md-8 col-lg-6 my-2">
+        <div className="projectrCard col-md-10 col-lg-6 my-2">
             <figure className="projectCard__wrapper">
                 <a href={deployed_url} target="_blank" rel="noopener noreferrer" >
                     <img src={image} alt={name} className="projectCard__image" />
