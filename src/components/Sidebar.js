@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const handleEmailMe = () => {
-    window.open("mailto:lalukumar7771@gmail.com");
+    window.open("mailto:lalu07442@gmail.com");
   };
   const sidebar_variant = {
     hidden: {
@@ -66,7 +66,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
-        email me
+        Email Me
       </div>
     </motion.div>
   );
