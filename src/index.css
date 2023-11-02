@@ -52,10 +52,10 @@ a:hover {
 }
 
 .sidebar__avatar {
-  height: 210px;
+  height: 220px;
   width: 220px;
-  object-fit: contain;
-  border-radius: 70%;
+  border-radius: 100%;
+  background-size: cover;
 }
 
 .sidebar__icon {

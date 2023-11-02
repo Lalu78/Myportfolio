@@ -1,9 +1,9 @@
 import React from "react";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
-import mightycoder from "../assets/lalupic.jpeg";
 import resume from "../assets/Lalu .pdf";
 import { motion } from "framer-motion";
+import profile from '../assets/projects_images/1.jpg'
 
 const Sidebar = () => {
   const handleEmailMe = () => {
@@ -31,7 +31,7 @@ const Sidebar = () => {
       initial="hidden"
       animate="visible"
     >
-      <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
+      <img src={profile} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name"> ER. LALU KUMAR MANDAL </div>
       <div className="sidebar__item sidebar__title"> <strong>Software Developer</strong></div>
       <div className="sidebar__item sidebar__title"> <strong>  ( Exp. 2.5 yr )</strong></div>
